@@ -1,0 +1,13 @@
+c:\users\mertmeric\documents\visual studio 2013\Projects\Obilet\Obilet\bin\Obilet.dll.config
+c:\users\mertmeric\documents\visual studio 2013\Projects\Obilet\Obilet\bin\Obilet.dll
+c:\users\mertmeric\documents\visual studio 2013\Projects\Obilet\Obilet\bin\Obilet.pdb
+c:\users\mertmeric\documents\visual studio 2013\Projects\Obilet\Obilet\obj\Debug\Obilet.csprojResolveAssemblyReference.cache
+c:\users\mertmeric\documents\visual studio 2013\Projects\Obilet\Obilet\obj\Debug\Obilet.dll
+c:\users\mertmeric\documents\visual studio 2013\Projects\Obilet\Obilet\obj\Debug\Obilet.pdb
+C:\Users\mert\Desktop\Projeler\Obilet\Obilet\Obilet\bin\Obilet.dll.config
+C:\Users\mert\Desktop\Projeler\Obilet\Obilet\Obilet\bin\Obilet.dll
+C:\Users\mert\Desktop\Projeler\Obilet\Obilet\Obilet\bin\Obilet.pdb
+C:\Users\mert\Desktop\Projeler\Obilet\Obilet\Obilet\obj\Debug\Obilet.csprojAssemblyReference.cache
+C:\Users\mert\Desktop\Projeler\Obilet\Obilet\Obilet\obj\Debug\Obilet.csproj.CoreCompileInputs.cache
+C:\Users\mert\Desktop\Projeler\Obilet\Obilet\Obilet\obj\Debug\Obilet.dll
+C:\Users\mert\Desktop\Projeler\Obilet\Obilet\Obilet\obj\Debug\Obilet.pdb

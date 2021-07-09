@@ -1,0 +1,169 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ana.master.cs" Inherits="Obilet.ana" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Online Bilet</title>
+    <link href="/style.css" rel="stylesheet" />
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+    <script type="text/javascript">
+
+        $("document").ready(function () {
+
+            $("header nav ul li.duyurular-wrap").mouseover(function () {
+
+                $("header nav ul li.duyurular-wrap .duyurular").css("display", "block")
+            })
+            $("header nav ul li.duyurular-wrap").mouseleave(function () {
+
+                $("header nav ul li.duyurular-wrap .duyurular").css("display", "none")
+            })
+
+        })
+
+
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+        <div id="wrapper">
+
+        <header>
+
+            <div class="logo">
+                <a href="./">
+                <img alt="" src="images/obilet.jpg" style="width: 77px; height: 21px" />
+                    </a>
+
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">Anasayfa</a>
+                    </li>
+                   
+                    <li class="duyurular-wrap">
+                        <a href="#">Duyurular</a>
+                        <div class="duyurular">
+                            <ul>
+                                <li>
+                                    <a href="Sikayet.aspx">Şikayet</a> 
+                                 
+                                 </li> </br>
+                                <li>
+                                    <a href="Yetkili.aspx">Yetkili Girişi</a>
+                                </li>
+                            </ul>
+                           
+                        </div>
+
+                    </li>
+                     <li>
+                        <a href="Obilet.aspx">Online Bilet</a>
+                    </li>
+                    <li>
+                        <a href="iletisim.aspx">İletişim</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <div class="arama">
+
+                <asp:TextBox ID="txtArama" CssClass="txtArama" runat="server" placeholder="Arama" />
+                
+                <asp:Button ID="btnArama" CssClass="btnArama" Text="Ara" runat="server" OnClick="btnArama_Click" />
+            </div>
+        </header>
+
+        <div class="banner">
+            Online Bilet'e Hoş Geldiniz.
+
+        </div>
+
+        <div class="sol-taraf">
+
+            <div class ="kayit">
+
+                <asp:Panel ID="pnlGiris" runat="server">
+                <div class="ust">
+                    Giriş Yap
+
+                </div>
+
+                <div class="alt">
+                    <div>
+                    <span>Kullanıcı adı</span>
+                    <asp:TextBox ID="txtkadi" CssClass="textbox" runat="server" />
+                    </div>
+                    <div class="sifre">
+                    <span>Şifre</span>
+                    <asp:TextBox ID="txtsifre" CssClass="textbox" runat="server" TextMode="Password" />
+                    </div>
+                        
+                    <%--<asp:Button ID="btnKayit" CssClass="btnKayit" Text="" runat="server" />--%>
+                    <a href="kayit.aspx" class="btnKayit">Kayıt Ol</a>
+                    <asp:Button ID="btnGiris" CssClass="btnGiris" Text="Giriş" runat="server" OnClick="btnGiris_Click" />
+                    <asp:Label ID="lblSonuc" Text="" runat="server" />
+                </div>
+                    </asp:Panel>
+                <asp:Panel ID="pnlKullanici" runat="server" CssClass="pnlKullanici">
+                    Hoşgeldiniz , <asp:Label ID="lblKadi" Text="" runat="server" />
+                    <br />
+                    <asp:Button ID="btnCikis" Text="Çıkış" runat="server" OnClick="btnCikis_Click" CssClass="Kcikis" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="btnBilet" Text="Biletlerim" runat="server" OnClick="btnBilet_Click" CssClass="Kbilet" />
+                </asp:Panel>
+            </div>
+
+            <div class="duyurular">
+
+                <div class="ust">
+                    Duyurular
+                </div>
+                <div class="alt">
+                    <asp:ListView ID="lstDuyuru" runat="server">
+                        <ItemTemplate>
+
+                            <div class="duyuru-wrap">
+                        <asp:Label Text='<%#Eval("Baslik") %>' runat="server" /><br />
+                        <asp:Label Text='<%#Eval("Duyuru") %>' runat="server" /><br />
+                        <asp:Label Text='<%#Eval("Tarih") %>' runat="server" />
+                    </div>
+
+                        </ItemTemplate>
+                    </asp:ListView>
+                    
+                    
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="icerik">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+
+        <footer>
+           <a href="./"><img alt="" src="images/obilet.jpg" style="width: 77px; height: 21px" /></a> Online Bilet - Mertcan FİDAN © 2015.
+        </footer>
+
+
+
+    </div>
+
+        
+    
+    </form>
+</body>
+</html>

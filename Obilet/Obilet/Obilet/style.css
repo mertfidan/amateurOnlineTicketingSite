@@ -1,0 +1,278 @@
+﻿body {
+    background-color: #d5d5d5;
+    font-family:'Trebuchet MS',Arial,'Comic Sans MS';
+}
+
+* {
+margin: 0; /*kenar boşlukları için*/
+padding: 0; /*içteki boşlukları sıfırladık*/
+border: 0; /*kenarlık çizgileri*/
+}
+
+a {
+    text-decoration:none;
+    color:#555;
+
+}
+a:hover{
+    color:#999;
+}
+
+#wrapper {
+
+    width: 960px; /*genişlik*/
+    height: auto;/*yükseklik , uzunluk*/
+    margin: 0 auto; /*ekrana ortalama*/
+}
+
+header{
+    float: left; /*sola yaslama*/
+    width: 100%;
+    height: 45px;
+    background-color:#fff;
+
+}
+
+         header .logo {
+            float:left;
+            width:89px;
+            height:45px;
+            border-right:1px solid #ff0000;
+            text-align:center;
+            line-height:45px;
+            color:#990000;
+        }
+            header nav {
+            float: left;
+            width: 609px;
+            height: 45px;
+            border-right: 1px solid #ff0000;
+            line-height:45px;
+        }
+            header nav ul{
+                list-style:none;
+            }
+                header nav ul li{
+                float:left;
+                margin:0 10px;
+                color:#555;
+                cursor:default;
+                }
+
+               header nav ul li.duyurular-wrap{
+                   position:relative;
+
+               }
+
+                    header nav ul li.duyurular-wrap .duyurular {
+                    display:none;
+                    position:absolute;
+                    width:120px;
+                    height:auto;
+                    background-color:#fff;
+                    }
+                header .arama{
+                    float:left;
+                    width:260px;
+                    height:45px;
+                }
+                header .arama .txtArama{
+                    float:left;
+                    width:190px;
+                    height:25px;
+                    padding:10px;
+                    }
+                header .arama .btnArama{
+                    float:left;
+                    width:49px;
+                    height:45px;
+                    border-left:1px solid #ff0000;
+                    background-color:#fff;
+                    cursor:pointer;
+                }
+
+.banner{
+    float:left;
+    margin-top:45px;
+    width:960px;
+    height:360px;
+    line-height:360px;
+    text-align:center;
+    font-size:56px;
+    color:#fff;
+    background-image:url('/images/banner.jpg');
+    background-size:cover;
+}
+
+.sol-taraf {
+    float: left;
+    width: 285px;
+    height: auto;
+    margin-top: 45px;
+    }
+
+    .sol-taraf .kayit{
+        float: left;
+        width:285px;
+        height:auto;
+    }
+    .sol-taraf .kayit .ust{
+        float:left;
+        width:270px;
+        height:44px;
+        line-height:44px;
+        padding-left:15px;
+        border-bottom:1px solid #ccc;
+        color:#555;
+        background-color:#fff;
+
+    }
+    .sol-taraf .kayit .alt{
+        float:left;
+        width:250px;
+        padding:17.5px;
+        height:190px;
+        border-bottom:1px solid #ccc;
+        color:#555; 
+        background-color:#fff;
+    }
+
+        .sol-taraf .kayit .alt .sifre{
+            margin-top:15px;
+        }
+    .sol-taraf .kayit .alt .textbox{
+
+        width:228px;
+        padding:10px;
+        height:18px;
+        border:1px solid #ccc;
+    }
+    .sol-taraf .kayit .alt .btnKayit{
+        float:left;
+        width:100px;
+        height:40px;
+        line-height:40px;
+        text-align:center;
+        color:#0099CC;
+        background-color:#ccc;
+        cursor:pointer;
+        margin-top:10px;
+
+
+    }
+     .sol-taraf .kayit .alt .btnKayit:hover {
+        
+        background-color:#9a8e8e;
+        color:#fff;
+        }
+
+     .sol-taraf .kayit .alt .btnGiris{
+        float:right;
+        width:100px;
+        height:40px;
+        line-height:40px;
+        text-align:center;
+        color:#dbcaca;
+        background-color:#0099CC;
+        cursor:pointer;
+        margin-top:10px;
+
+
+    }
+
+        .sol-taraf .kayit .alt .btnGiris:hover {
+        
+        background-color:#28bbeb;
+        color:#fff;
+        }
+        
+        .pnlKullanici{
+            width:250px;
+            background-color:#fff;
+            padding:15px; 
+        }
+        .Kcikis{
+            margin-top:10px;
+            background-color:white;
+            color:#0099CC;
+            cursor:pointer;
+        }
+        .Kbilet{
+            
+            margin-top:10px;
+            background-color:white;
+            color:#0099CC;
+            cursor:pointer;
+        }
+    .sol-taraf .duyurular{
+
+        float:left;
+        width:285px;
+        height:auto;
+        margin-top:45px;
+        
+    }
+
+     .sol-taraf .duyurular .ust{
+        float:left;
+        width:270px;
+        height:44px;
+        line-height:44px;
+        padding-left:15px;
+        border-bottom:1px solid #ccc;
+        color:#555;
+        background-color:#fff;
+
+    }
+    .sol-taraf .duyurular .alt{
+        float:left;
+        width:250px;
+        padding:17.5px;
+        height:auto;
+        border-bottom:1px solid #ccc;
+        color:#555;
+        background-color:#fff;
+    }
+
+   .sol-taraf .duyurular .alt .duyuru-wrap{
+float:left;
+width:250px;
+height:auto;
+margin:10px 0;
+background-color:#fff;
+
+
+   }
+
+        .sol-taraf .duyurular .alt .duyuru-wrap:hover {
+
+            background-color:#d5d5d5;
+
+        }
+
+
+.icerik{
+
+    float:right;
+    padding:20px;
+    width:625px;
+    height:auto;
+    margin-top:45px;
+    background-color:#fff;
+
+}
+
+footer{
+    float:left;
+    width: 100%;
+    height:60px;
+    margin-top:45px;
+    text-align:center;
+    line-height:60px;
+    color:#555;
+    background-color:#fff;
+    
+    
+    
+
+}
